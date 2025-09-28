@@ -54,3 +54,33 @@ main p em {
   margin: 30px auto 0; 
 }
 
+#chooseMode {
+  position: fixed;     
+  top: 10px;            
+  left: 10px;           
+  padding: 5px;         
+  font-size: 16px;      
+  z-index: 1000;        
+}
+
+
+
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-mode .content {
+  background-color: #333;
+}
+
+body.dark-mode .title h2 {
+  color: #006EB6;
+}
+
+body.dark-mode .logo {
+  filter: brightness(0.8);
+}
+
+
