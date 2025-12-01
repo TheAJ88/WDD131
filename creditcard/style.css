@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid container for overlapping cards */
+.card-stack {
+  display: grid;
+  grid-template-areas: "stack";
+  position: relative;
+  width: 360px;
+  height: 220px;
+  margin-bottom: 1rem;
+}
+
+/* Shared card styles */
+.card {
+  grid-area: stack;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 0.5rem;
+}
+
+
+.card-front {
+    z-index: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "total image"
+    "number number"
+    "holder expiry"
+    ". submit";
+  gap: 0.75rem;
+}
+
+/* Card back styling */
+.card-back {
+  background-color: #d0d0d0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+}
+
+/* Grid area assignments */
+.total {
+  grid-area: total;
+}
+
+.card-image {
+  grid-area: image;
+}
+
+#card-number {
+  grid-area: number;
+}
+
+#card-holder {
+  grid-area: holder;
+}
+
+.expiry-group {
+  grid-area: expiry;
+}
+
+
+input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+button {
+
+    grid-area: submit;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  display: block;
+}
