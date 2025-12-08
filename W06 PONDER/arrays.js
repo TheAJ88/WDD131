@@ -1,4 +1,4 @@
-//  arrays.js
+// Activity 1
 const steps = ["one", "two", "three"];
 function listTemplate(step) {
   return `<li>${step}</li>`;
