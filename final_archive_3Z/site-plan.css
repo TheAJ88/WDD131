@@ -22,7 +22,7 @@ Fonts are separated by a | */
   --paragraph-color-on-white: var(
     --primary-color
   ); /* paragraph text on a white background */
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-color-on-color: #d0cd94; /* paragraph text on a colored background */
   --paragraph-background-color: var(--primary-color);
   --nav-link-color: var(--accent2-color);
   --nav-background-color: var(--accent1-color);
