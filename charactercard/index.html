@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Card</title>
+  <meta property="title" content="Character Card" />
+  <meta property="description" content="A JavaScript character card with stats and actions." />
+  <meta property="image" content="agscorn.webp" />
+  <meta property="type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="card.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+    <img id="charImage" class="image" src="agscorn.webp" width="100" alt="Character Image" />
+    <div id="charName" class="name"></div>
+
+    <div class="stats">
+      <p id="charClass"></p>
+      <p id="charLevel"></p>
+      <p id="charHealth"></p>
+    </div>
+
+    <div class="buttons">
+      <button id="attackBtn">Attack</button>
+      <button id="levelBtn">Level Up</button>
+    </div>
+  </div>
+</body>
+</html>
