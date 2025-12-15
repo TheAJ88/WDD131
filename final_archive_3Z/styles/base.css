@@ -1,6 +1,4 @@
-/* ================================
-   GLOBAL VARIABLES
-================================ */
+/* DECLARING GLOBAL VARIABLE FOR ACCESSIBILITY */
 :root {
     --primary: #D56F3E;
     --secondary: #D0CD94;
@@ -25,9 +23,7 @@ body.dark {
     --text-dark: #D0CD94;
 }
 
-/* ================================
-   GLOBAL RESET + BASE
-================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,9 +59,6 @@ a {
     color: inherit;
 }
 
-/* ================================
-   TEMPLATE HEADER + FOOTER
-================================ */
 
 #header {
     background-color: var(--accent1);
@@ -77,9 +70,7 @@ a {
     margin-top: 4rem;
 }
 
-/* ================================
-   NAVIGATION
-================================ */
+
 
 .main-nav {
     display: flex;
@@ -122,9 +113,7 @@ a {
     color: var(--bg-light);
 }
 
-/* ================================
-   SEARCH BAR
-================================ */
+/* SEARCH BAR */
 
 .search-container {
     width: 100%;
@@ -183,9 +172,7 @@ a {
     background-color: var(--secondary);
 }
 
-/* ================================
-   FOOTER
-================================ */
+
 
 .site-footer {
     padding: 2rem;
@@ -195,30 +182,13 @@ a {
     font-weight: 600;
 }
 
-/* ================================
-   UTILITY CLASSES
-================================ */
 
-.hidden {
-    display: none;
-}
-
-.center {
-    text-align: center;
-}
-
-/* ================================
-   STORY LINK FIX
-================================ */
 
 .story-link {
     display: block;
     margin-bottom: 2rem;
 }
 
-/* ================================
-   DEFAULT BUTTON STYLE
-================================ */
 
 button {
     font-family: inherit;

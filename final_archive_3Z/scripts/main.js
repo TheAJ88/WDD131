@@ -4,7 +4,6 @@ import { initThemeToggle } from "./theme-toggle.js";
 import { initStoryPreviews, initFullStoryLinks } from "./story-preview.js";
 
 
-// Run all features when DOM is ready (defer ensures this)
 (async () => {
     await loadTemplate("header", "templates/header.html");
     await loadTemplate("footer", "templates/footer.html");

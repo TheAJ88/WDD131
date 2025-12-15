@@ -1,16 +1,13 @@
-/* ================================
-   HOME PAGE LAYOUT
-================================ */
+
 
 .home-content {
     padding: 2rem;
-    margin-top: 1rem; /* spacing under template header */
+    margin-top: 1rem; 
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-/* Story List Container */
 .story-list {
     display: flex;
     flex-direction: column;
@@ -19,7 +16,6 @@
     margin: 0 auto;
 }
 
-/* Story Card */
 .story-card {
     background-color: var(--secondary);
     border-left: 6px solid var(--accent1);
@@ -35,21 +31,18 @@
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-/* Story Title */
 .story-card h2 {
     font-family: var(--heading-font);
     color: #241623;
     margin-bottom: 0.5rem;
 }
 
-/* Preview Text */
 .preview {
     font-size: 1rem;
     color: #241623;
     margin-bottom: 1rem;
 }
 
-/* Expand Button */
 .expand-btn {
     background-color: var(--accent1);
     color: var(--accent2);
@@ -66,7 +59,6 @@
     color: var(--bg-dark);
 }
 
-/* Full Story Button */
 .full-story-btn {
     background-color: var(--accent2);
     color: var(--accent1);
@@ -84,14 +76,10 @@
     color: var(--bg-dark);
 }
 
-/* Search Bar Spacing */
 .search-container {
     margin-bottom: 1rem;
 }
 
-/* ================================
-   RESPONSIVE DESIGN
-================================ */
 
 @media (max-width: 600px) {
     .story-card {

@@ -1,18 +1,12 @@
-// ===============================
-// STORY PREVIEW EXPANSION MODULE
-// ===============================
-
 export function initStoryPreviews() {
     const storyCards = document.querySelectorAll(".story-card");
 
-    // If page has no story cards (like backstory.html), exit safely
     if (!storyCards.length) return;
 
     storyCards.forEach(card => {
         const preview = card.querySelector(".preview");
         const button = card.querySelector(".expand-btn");
 
-        // Defensive: ensure both elements exist
         if (!preview || !button) return;
 
         let expanded = false;
@@ -31,7 +25,6 @@ export function initStoryPreviews() {
             }
         });
 
-        // Start collapsed
         preview.style.maxHeight = "0";
         preview.style.overflow = "hidden";
         preview.style.transition = "max-height 0.4s ease, opacity 0.3s ease";

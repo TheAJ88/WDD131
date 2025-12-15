@@ -1,10 +1,6 @@
-/* ================================
-   STORY PAGE LAYOUT
-================================ */
-
 .story-content {
     padding: 2rem;
-    margin-top: 1rem; /* spacing under template header */
+    margin-top: 1rem; 
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +9,6 @@
     gap: 2rem;
 }
 
-/* Title */
 .story-title {
     font-family: var(--heading-font);
     font-size: 2.4rem;
@@ -21,7 +16,6 @@
     text-align: center;
 }
 
-/* Metadata */
 .story-meta {
     font-size: 0.9rem;
     color: var(--accent1);
@@ -29,7 +23,6 @@
     margin-bottom: 1rem;
 }
 
-/* Body Text */
 .story-body pre {
     font-family: var(--body-font);
     font-size: 1.15rem;
