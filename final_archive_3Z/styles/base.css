@@ -1,0 +1,236 @@
+/* ================================
+   GLOBAL VARIABLES
+================================ */
+:root {
+    --primary: #D56F3E;
+    --secondary: #D0CD94;
+    --accent1: #3C787E;
+    --accent2: #C7EF00;
+
+    --bg-light: #D56F3E;
+    --bg-dark: #241623;
+
+    --text-light: #ffffff;
+    --text-dark: #241623;
+
+    --heading-font: "Rowdies", sans-serif;
+    --body-font: "Titillium Web", sans-serif;
+
+    --transition: 0.25s ease;
+}
+
+/* Dark mode variables */
+body.dark {
+    --bg-light: #241623;
+    --text-dark: #D0CD94;
+}
+
+/* ================================
+   GLOBAL RESET + BASE
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+main {
+    flex: 1;
+    margin-top: 1rem; /* spacing under header */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================================
+   TEMPLATE HEADER + FOOTER
+================================ */
+
+#header {
+    background-color: var(--accent1);
+    padding: 1rem 2rem;
+    color: var(--accent2);
+}
+
+#footer {
+    margin-top: 4rem;
+}
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-center .logo {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--accent2);
+}
+
+.main-nav a {
+    font-weight: 600;
+    color: var(--accent2);
+    transition: color var(--transition);
+}
+
+.main-nav a:hover {
+    color: var(--bg-light);
+}
+
+.nav-right button {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: var(--accent2);
+    transition: color var(--transition);
+}
+
+.nav-right button:hover {
+    color: var(--bg-light);
+}
+
+/* ================================
+   SEARCH BAR
+================================ */
+
+.search-container {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    transition: max-height var(--transition), opacity var(--transition);
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.search-container.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--accent1);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-light);
+    border: 1px solid var(--accent1);
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    display: none;
+}
+
+.search-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.search-dropdown a:last-child {
+    border-bottom: none;
+}
+
+.search-dropdown a:hover {
+    background-color: var(--secondary);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--accent1);
+    color: var(--accent2);
+    font-weight: 600;
+}
+
+/* ================================
+   UTILITY CLASSES
+================================ */
+
+.hidden {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ================================
+   STORY LINK FIX
+================================ */
+
+.story-link {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* ================================
+   DEFAULT BUTTON STYLE
+================================ */
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+button:focus {
+    outline: 2px solid var(--accent2);
+    outline-offset: 2px;
+}

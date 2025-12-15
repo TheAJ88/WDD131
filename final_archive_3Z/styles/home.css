@@ -1,0 +1,112 @@
+/* ================================
+   HOME PAGE LAYOUT
+================================ */
+
+.home-content {
+    padding: 2rem;
+    margin-top: 1rem; /* spacing under template header */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Story List Container */
+.story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Story Card */
+.story-card {
+    background-color: var(--secondary);
+    border-left: 6px solid var(--accent1);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Story Title */
+.story-card h2 {
+    font-family: var(--heading-font);
+    color: #241623;
+    margin-bottom: 0.5rem;
+}
+
+/* Preview Text */
+.preview {
+    font-size: 1rem;
+    color: #241623;
+    margin-bottom: 1rem;
+}
+
+/* Expand Button */
+.expand-btn {
+    background-color: var(--accent1);
+    color: var(--accent2);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.expand-btn:hover {
+    background-color: var(--accent2);
+    color: var(--bg-dark);
+}
+
+/* Full Story Button */
+.full-story-btn {
+    background-color: var(--accent2);
+    color: var(--accent1);
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color var(--transition);
+    margin-left: 0.5rem;
+}
+
+.full-story-btn:hover {
+    background-color: var(--accent1);
+    color: var(--bg-dark);
+}
+
+/* Search Bar Spacing */
+.search-container {
+    margin-bottom: 1rem;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 600px) {
+    .story-card {
+        padding: 1.2rem 1.4rem;
+    }
+
+    .expand-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .full-story-btn {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}

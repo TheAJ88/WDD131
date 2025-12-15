@@ -3,12 +3,9 @@ import { recipes } from "./recipes.mjs";
 function random(num) {
   return Math.floor(Math.random() * num);
 }
-
 function getRandomListEntry(list) {
   return list[random(list.length)];
 }
-
-
 function tagsTemplate(tags) {
   return tags.map(tag => `<span class="tag">${tag}</span>`).join("");
 }
@@ -42,13 +39,10 @@ function recipeTemplate(recipe) {
   `;
 }
 
-
-
 function renderRecipes(recipeList) {
   const container = document.getElementById("recipes");
   container.innerHTML = recipeList.map(recipeTemplate).join("");
 }
-
 
 function filterRecipes(query) {
   const q = query.toLowerCase();
