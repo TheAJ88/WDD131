@@ -60,22 +60,14 @@ a {
 }
 
 
-#header {
-    background-color: var(--accent1);
-    padding: 1rem 2rem;
-    color: var(--accent2);
-}
-
-#footer {
-    margin-top: 4rem;
-}
-
-
 
 .main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--accent1);
+    padding: 1rem 2rem;
+    color: var(--accent2);
 }
 
 .nav-left,
