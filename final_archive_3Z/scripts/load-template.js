@@ -11,14 +11,8 @@ export async function loadTemplate(targetId, filePath) {
     const target = document.getElementById(targetId);
     if (!target) return; // Skip if element doesn't exist
 
-    let depth;
-    if (location.pathname.startsWith("/final_archive_3Z/")) {
-        depth = location.pathname.split("/").length - 3;
-    } else {
-        depth = location.pathname.split("/").length - 2;
-    }
-    const prefix = "../".repeat(depth);
-    const fullPath = prefix + filePath;
+    const root = location.pathname.replace(/\/[^\/]*$/, "/");
+    const fullPath = root + filePath;
 
     try {
         const response = await fetch(fullPath);
